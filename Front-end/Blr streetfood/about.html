@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+
+<body style="background color:grey" onload="startTime();">
+<script   src="http://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous">
+</script>
+<script type="text/JavaScript">
+var timerid = 0;
+var images = new Array(	"slider1.jpg",
+			"slider4.jpg",
+			"slider5.jpg");
+var countimages = 0;
+function startTime()
+{
+	if(timerid)
+	{
+		timerid = 0;
+	}
+	var tDate = new Date();
+	
+	if(countimages == images.length)
+	{
+		countimages = 0;
+	}
+	if(tDate.getSeconds() % 5 == 0)
+	{
+		document.getElementById("img1").src = images[countimages];
+	}
+	countimages++;
+	
+	timerid = setTimeout("startTime()", 1000);
+}
+</script>
+<table>
+<tr>
+<td><img  src="blr-street-food-logo.png" /></td><td><a href="about.html">About us</a></td></td><td><a href="register.html">Register</a></td>
+</tr></table>
+<img id="img1" src="slider1.jpg"/>
+
+</body>
+</html>

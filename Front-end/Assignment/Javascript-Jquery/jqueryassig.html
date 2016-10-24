@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script   src="http://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous">
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#btnSubmit').click(function(e) {
+        var isValid = true;
+        $('input[type="text"],input[type="password"]').each(function() {
+            if ($.trim($(this).val()) == '') {
+                isValid = false;
+                $(this).css({
+                    "border": "1px solid red",
+                    // "background": "#FFCECE"
+                });
+            }
+            else {
+                $(this).css({
+                    "border": "",
+                    // "background": ""
+                });
+            }
+        });
+        if (isValid == false) 
+            e.preventDefault();
+        else 
+            alert('Thank you for submitting');
+    });
+});
+
+
+</script>
+
+
+<div class="container" style="margin:20% 30%";>
+  
+  <form class="form1">
+    <table style="backgroung-color:grey">
+<tr>
+    <td>Name:
+    </td>
+    <td><input type='text' id='txtFName'/ >
+    </td>
+</tr>
+
+<tr>
+    <td>Email:
+    </td>
+    <td><input type='text' id='txtEmail'/ >
+    </td>
+</tr>
+<tr>
+    <td>Password:
+    </td>
+    <td><input type='password' id='txtEmail'/ >
+    </td>
+</tr>
+<tr>
+      <td><div class="checkbox">
+                     <label><input type="checkbox" /> Check me out</label>
+</div>
+</td>
+</tr>
+    <td colspan="2" style='text-align:center;'><input type="button" id="btnSubmit" value=" Submit ">
+    </td>
+</tr>
+</table>
+  </form>
+</div>
+<script   src="http://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous">
+</script>
+<script type="text/JavaScript">
+				
+</script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banglore streetfood</title>
+	<link rel="stylesheet" type="text/css" href="CSS.css"/>
+</head>
+<body style="background color:grey" onload="startTime();">
+<script   src="http://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous">
+</script>
+<script type="text/JavaScript">
+
+function dispindiranagar(){
+	// alert("Press ok to return to home");
+	document.getElementById('indi').style.display='block'
+	document.getElementById('vvp').style.display='none'
+	document.getElementById('kor').style.display='none'
+	
+
+}
+
+function dispvvpuram(){
+	document.getElementById('indi').style.display='none'
+	document.getElementById('vvp').style.display='block'
+	document.getElementById('kor').style.display='none'
+}
+
+function dispkormangala(){
+	document.getElementById('indi').style.display='none'
+	document.getElementById('vvp').style.display='none'
+	document.getElementById('kor').style.display='block'
+}
+
+var timerid = 0;
+var images = new Array(	"slider1.jpg",
+			"slider4.jpg",
+			"slider5.jpg");
+var countimages = 0;
+function startTime()
+{
+	if(timerid)
+	{
+		timerid = 0;
+	}
+	var tDate = new Date();
+	
+	if(countimages == images.length)
+	{
+		countimages = 0;
+	}
+	if(tDate.getSeconds() % 5 == 0)
+	{
+		document.getElementById("img1").src = images[countimages];
+	}
+	countimages++;
+	
+	timerid = setTimeout("startTime()", 1000);
+}
+</script>
+  
+
+
+<div id="indi" style="display:none">
+<table style="background-color:grey">
+<tr>
+<td><img  src="blr-street-food-logo.png" /></td><td><a href="about.html">About us</a></td></td><td><a href="register.html">Register</a></td>
+</tr></table>
+<img id="img1" src="slider1.jpg"/>
+<div class="container">
+  <a style="color:red; size:100px"; "onclick="dispindiranagar()"> <button class="button" >INDIRAGANAR</button></a>     <a onclick="dispvvpuram()"><button class="button" >VVPURAM</button></a>    <a "onclick="dispkormangala()"> <button class="button" >KORMANGALA</button></a>    
+</div>
+<table width:70%>
+<tr><td><p>VV Puram is Bangalore's most famous Food Street and a complete must-do for anyone visiting or
+staying in Bangalore. Till you get there and try the food, you really don’t know what you're missing.
+This guide attempts to cover almost each of the outlets starting from when one enters the street at
+Sajjan Rao Circle. Before that a few basic guidelines about this food street and what we suggest
+you keep in mind while planning this gastronomical adventure.
+</p></td>
+</tr>
+<tr><td><img  src="icon-bullet.png" />
+Hatti Kaapi – Superlative filter coffee. Best of South-Indian tiffin snacks – Maddur Vada, Masala
+Bun, Vada Pao, Idly, Vada. Hazelnut Cold Coffee.</td><td style="font:bold">Now a quick overview of the food before we get into the specifics of what each of the joints serve.There are about 15 outlets serving different types of food (listed below outlet by outlet). We wouldclassify the food varieties into the following categories in decreasing order of specialty – from must-have to do-try to not-what-this-is-known-for. That is not to say that food listed in the last category isnot good – it’s just not what this street is known for. Also, some of those in the last category arerelatively new additions to this otherwise old food street, and purists that we are, we would like to
+call them out.</td></tr>
+<tr><td><img  src="icon-bullet.png" />
+Khawa Karpo – Hole-in-the-wall Tibetan joint frequented by students. Thukpa, Honey Potato
+Wedges, Ting-Mo and Chicken Shap-tak.</td></tr>
+<tr><td><img  src="icon-bullet.png" />
+Juice Junction – Freshly prepared fruit juices, fruit salad.</td></tr>
+<tr><td><img  src="icon-bullet.png" />
+Soori Chats – South-Indian Bhel Puri.</td></tr>
+<tr><td>
+<h3>Not-what-this-street-is-known-for but can-try shops because their food is good:</h3>
+</td><td><h4>Must-have:</h4></td></tr>
+<tr><td><img  src="icon-bullet.png" />Mumbai Pao Bhaji, Dabeli, Tawa Pulao,</td><td><img src="icon-ok.png">Special South-Indian fare – Akki Roti / Ragi Roti / Paniyaram or paddus / Kodu Bele</td></tr>
+<tr><td><img  src="icon-bullet.png" />Punjabi chaats (pani puri, papdi chaat, bread pakora, cutlets)</p></td><td><img src="icon-ok.png">Special South-Indian fare – Akki Roti / Ragi Roti / Paniyaram or paddus / Kodu Bele</td></tr>
+<tr><td><img  src="icon-bullet.png" />Paranthas / Rajasthani roti sabzi,</td><td><img src="icon-ok.png">Special South-Indian sweet paranthas – Dal / Hollige</td></tr>
+<tr><td><img  src="icon-bullet.png" />Lassi / Rose Milk / Kulfi</td><td><img src="icon-ok.png">Hot Jalebis / Gulab Jamun</td></tr>
+<tr><td><img  src="icon-bullet.png" />Chinese</td><td><img src="icon-ok.png">Bhajjis & Bondas</td></tr>
+<tr><td><img  src="icon-bullet.png" />Sandwiches</td><td><img src="icon-ok.png">Gulkun Ice-cream</td></tr>
+<tr><td></td><td><h3> Do-try:</h3></td></tr>
+<tr><td></td><td><img src="icon-ok.png">Regular South-Indian Tiffin – Dosas & Uttapams (made with generous amounts of pure ghee),
+Idli, Vadas, Lemon Rice, Curd Rice, Vermicelli Upma</td></tr>
+
+</table>
+</div>
+
+
+
+
+
+<div id="vvp" style="display:block">
+<table style="background-color:grey">
+<tr>
+<td><img  src="blr-street-food-logo.png" /></td><td><a href="about.html">About us</a></td></td><td><a href="register.html">Register</a></td>
+</tr></table>
+<img id="img1" src="slider1.jpg" />
+<div class="container">
+  <a style="color:red; size:100px"; "onclick="dispindiranagar()"> <button class="button" >INDIRAGANAR</button></a>     <a onclick="dispvvpuram()"><button class="button" >VVPURAM</button></a>    <a "onclick="dispkormangala()"> <button class="button" >KORMANGALA</button></a>    
+</div>
+
+<table width:70%>
+<tr><td><pre></pre>VV Puram is Bangalore’s most famous Food Street and a complete must-do for anyone visiting or
+staying in Bangalore. Till you get there and try the food, you really don’t know what you’re missing.
+This guide attempts to cover almost each of the outlets starting from when one enters the street at
+Sajjan Rao Circle. Before that a few basic guidelines about this food street and what we suggest
+you keep in mind while planning this gastronomical adventure.
+</pre></td>
+</tr>
+<tr><td><img  src="icon-bullet.png" />
+To taste maximum number of dishes and make the most of this trail, do it in a group of 8 or more
+people (who do not mind sharing food). There is so much on offer that just a couple of bites of
+the top items at each joint will fill you up to a point when the senses may crave but the stomach
+will refuse to take in any more. No point eating one or two items and heading back, we say.</td><td style="font:bold">Now a quick overview of the food before we get into the specifics of what each of the joints serve.There are about 15 outlets serving different types of food (listed below outlet by outlet). We wouldclassify the food varieties into the following categories in decreasing order of specialty – from must-have to do-try to not-what-this-is-known-for. That is not to say that food listed in the last category isnot good – it’s just not what this street is known for. Also, some of those in the last category arerelatively new additions to this otherwise old food street, and purists that we are, we would like to
+call them out.</td></tr>
+<tr><td><img  src="icon-bullet.png" />
+VV Puram comes alive around 7:30 – 8:00 in the evening. While some of the shops start serving
+from 5:30-6:00 PM onwards, all of them are ready only by 7:00 PM.</td></tr>
+<tr><td><img  src="icon-bullet.png" />
+Weekends are extremely crowded so get there a little early. The crowds can mean having to wait
+a fair bit of time at some of the shops.</td></tr>
+<tr><td><img  src="icon-bullet.png" />
+Finding parking is not extremely easy on weekends – try one of the roads leading into Sajjan Rao
+Circle if you can’t find parking around the circle itself.</td></tr>
+<tr><td>
+<h3>Not-what-this-street-is-known-for but can-try shops because their food is good:</h3>
+</td><td><h4>Must-have:</h4></td></tr>
+<tr><td><img  src="icon-bullet.png" />Mumbai Pao Bhaji, Dabeli, Tawa Pulao,</td><td><img src="icon-ok.png">Special South-Indian fare – Akki Roti / Ragi Roti / Paniyaram or paddus / Kodu Bele</td></tr>
+<tr><td><img  src="icon-bullet.png" />Punjabi chaats (pani puri, papdi chaat, bread pakora, cutlets)</p></td><td><img src="icon-ok.png">Special South-Indian fare – Akki Roti / Ragi Roti / Paniyaram or paddus / Kodu Bele</td></tr>
+<tr><td><img  src="icon-bullet.png" />Paranthas / Rajasthani roti sabzi,</td><td><img src="icon-ok.png">Special South-Indian sweet paranthas – Dal / Hollige</td></tr>
+<tr><td><img  src="icon-bullet.png" />Lassi / Rose Milk / Kulfi</td><td><img src="icon-ok.png">Hot Jalebis / Gulab Jamun</td></tr>
+<tr><td><img  src="icon-bullet.png" />Chinese</td><td><img src="icon-ok.png">Bhajjis & Bondas</td></tr>
+<tr><td><img  src="icon-bullet.png" />Sandwiches</td><td><img src="icon-ok.png">Gulkun Ice-cream</td></tr>
+<tr><td></td><td><h3> Do-try:</h3></td></tr>
+<tr><td></td><td><img src="icon-ok.png">Regular South-Indian Tiffin – Dosas & Uttapams (made with generous amounts of pure ghee),
+Idli, Vadas, Lemon Rice, Curd Rice, Vermicelli Upma</td></tr>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="kor" style="display:none">
+
+
+<table style="background-color:grey">
+<tr>
+<td><img  src="blr-street-food-logo.png" /></td><td><a href="about.html">About us</a></td></td><td><a href="register.html">Register</a></td>
+</tr></table>
+<img id="img1" src="slider1.jpg" />
+<div class="container">
+  <a style="color:red; size:100px"; "onclick="dispindiranagar()"> <button class="button" >INDIRAGANAR</button></a>     <a onclick="dispvvpuram()"><button class="button" >VVPURAM</button></a>    <a "onclick="dispkormangala()"> <button class="button" >KORMANGALA</button></a>    
+</div>
+
+<table width:70%>
+<tr><td><pre></pre>Koramangala is another of Bangalore’s hip and happening party and food districts, housing
+restaurants specializing in any cuisine you can think of. It is 4 kms from Royal Orchid down a
+straight road – the intermediate ring road. Koramangala has super interesting street-side joints,
+standing shoulder to shoulder with their more sophisticated, up-market cousins. An interesting
+Rajasthani place, a hole-in-the-wall Tibetian joint, Bhajji Carts, Pao Bhaji vans ... lots to explore in
+this part of the city.
+</pre></td>
+</tr>
+<tr><td><img  src="icon-bullet.png" />
+(Quick advice on the traffic scene. Getting from Royal Orchid to Koramangala can take anywhere
+from 7 mins to 45 mins – it is a simple function of the time of day and traffic scenario. During office
+hours (read 8:30 AM – 10:30 AM and 5:30 PM – 7:30 PM) the 45 min time frame is what you
+should budget for.)</td><td style="font:bold">Now a quick overview of the food before we get into the specifics of what each of the joints serve.There are about 15 outlets serving different types of food (listed below outlet by outlet). We wouldclassify the food varieties into the following categories in decreasing order of specialty – from must-have to do-try to not-what-this-is-known-for. That is not to say that food listed in the last category isnot good – it’s just not what this street is known for. Also, some of those in the last category arerelatively new additions to this otherwise old food street, and purists that we are, we would like to
+call them out.</td></tr>
+<tr><td><img  src="icon-bullet.png" />
+It’s worth splitting Koramangala into two sections. The area around Jyoti Nivas College has a
+buzzing student vibe. Then there is 80 ft Rd Koramangala that has what could be called the
+Koramangala Food Street for the string of street-side food stalls it hosts. (Koramangala actually
+had a food street (read about it here) which was relocated by the Municipal authorities a few
+months ago. There is hope that the authorities will allow the vendors to come back and set up the
+street the way it was but for now all the vendors have relocated from there.)</td></tr>
+<tr><td><img  src="icon-bullet.png" />
+Weekends are extremely crowded so get there a little early. The crowds can mean having to wait
+a fair bit of time at some of the shops.</td></tr>
+<tr><td></td></tr>
+<tr><td>
+</td><td><h4>Must-have:</h4></td></tr>
+<tr><td><img  src="icon-bullet.png" />Mumbai Pao Bhaji, Dabeli, Tawa Pulao,</td><td><img src="icon-ok.png">Special South-Indian fare – Akki Roti / Ragi Roti / Paniyaram or paddus / Kodu Bele</td></tr>
+<tr><td><img  src="icon-bullet.png" />Punjabi chaats (pani puri, papdi chaat, bread pakora, cutlets)</p></td><td><img src="icon-ok.png">Special South-Indian fare – Akki Roti / Ragi Roti / Paniyaram or paddus / Kodu Bele</td></tr>
+<tr><td><img  src="icon-bullet.png" />Paranthas / Rajasthani roti sabzi,</td><td><img src="icon-ok.png">Special South-Indian sweet paranthas – Dal / Hollige</td></tr>
+<tr><td><img  src="icon-bullet.png" />Lassi / Rose Milk / Kulfi</td><td><img src="icon-ok.png">Hot Jalebis / Gulab Jamun</td></tr>
+<tr><td><img  src="icon-bullet.png" />Chinese</td><td><img src="icon-ok.png">Bhajjis & Bondas</td></tr>
+<tr><td><img  src="icon-bullet.png" />Sandwiches</td><td><img src="icon-ok.png">Gulkun Ice-cream</td></tr>
+<tr><td></td><td><h3> Do-try:</h3></td></tr>
+<tr><td></td><td><img src="icon-ok.png">Regular South-Indian Tiffin – Dosas & Uttapams (made with generous amounts of pure ghee),
+Idli, Vadas, Lemon Rice, Curd Rice, Vermicelli Upma</td></tr>
+
+
+</div>
+
+</body>
+</html>

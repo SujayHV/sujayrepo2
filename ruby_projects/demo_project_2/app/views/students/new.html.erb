@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1> Hello</h1>
+<%= form_for @students,url: student_path do |f| %>
+    <%= f.label :Name %>
+    <%= f.text_field :firstname %>
+    <br>
+    <%= f.label :lastname %>
+    <%= f.text_field :lastname %>
+    <br>
+    <%= f.label :studentId %>
+    <%= f.text_field :studentId %>
+    <br>
+    <%=f.submit "Submit" %>
+    <% end %>
+
+</body>
+</html>

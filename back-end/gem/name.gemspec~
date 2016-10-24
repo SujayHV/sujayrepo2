@@ -1,0 +1,14 @@
+
+Gem::Specification.new do |s|
+  s.name        = 'Sujay'
+  s.version     = '2.2.3p173'
+  s.date        = '2016-10-3'
+  s.summary     = "Sujay!"
+  s.description = "A simple name displaying gem"
+  s.authors     = ["Sujay"]
+  s.email       = 'svijay@qwinix.io'
+  s.files       = ["lib/Name.rb"]
+  s.homepage    =
+    'http://rubygems.org/gems/Name'
+  s.license       = 'Qwinix'
+end
